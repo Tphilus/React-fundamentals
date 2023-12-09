@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import Final from "./tutorial/01-useState/final/03-useState-array";
+// import Starter from "./tutorial/01-useState/starter/02-useState-basics";
+// import Starter from "./tutorial/01-useState/starter/03-useState-array";
+// import Starter from "./tutorial/01-useState/starter/04-useState-object";
+// import Starter from "./tutorial/01-useState/starter/05-useState-gotcha";
+
+// USEFFECT
+// import Starter from "./tutorial/02-useEffect/starter/01-code-example";
+// import Starter from "./tutorial/02-useEffect/starter/03-multiple-effects";
+// import Starter from "./tutorial/02-useEffect/starter/04-fetch-data";
+import Starter from "./tutorial/03-conditional-rendering/starter/02-multiple-returns-fetch-data";
+
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="container">
+      <Starter />
+      {/* <Final /> */}
+    </div>
+  );
 }
 
-export default App
+export default App;
