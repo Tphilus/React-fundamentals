@@ -1,4 +1,4 @@
-import Starter from "./tutorial/06-forms/starter/05-form-data";
+import Starter from "./tutorial/09-context-api/starter/Navbar";
 
 // USEFFECT
 // import Starter from "./tutorial/03-conditional-rendering/starter/07-user-challenge";
@@ -10,9 +10,9 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="container">
+    <>
       <Starter />
-    </div>
+    </>
   );
 }
 
