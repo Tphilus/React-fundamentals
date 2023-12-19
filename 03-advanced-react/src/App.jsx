@@ -1,4 +1,4 @@
-import Starter from "./tutorial/09-context-api/starter/Navbar";
+import Starter from "./tutorial/10-useReducer/starter/01-useReducer";
 
 // USEFFECT
 // import Starter from "./tutorial/03-conditional-rendering/starter/07-user-challenge";
