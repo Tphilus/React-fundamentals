@@ -1,4 +1,4 @@
-import Starter from "./tutorial/10-useReducer/starter/01-useReducer";
+import Starter from "./tutorial/11-performance/starter/03-hooks";
 
 // USEFFECT
 // import Starter from "./tutorial/03-conditional-rendering/starter/07-user-challenge";

@@ -1,31 +1,11 @@
 import { useReducer, useState } from "react";
 import { data } from "../../../data";
+import { CLEAR_LIST, REST_LIST, REMOVE_ITEM } from "./actions";
+import { Reducer } from "react";
 
 const defaultState = {
   people: data,
   isLoading: false,
-};
-
-const CLEAR_LIST = "CLEAR_LIST";
-const REST_LIST = "REST_LIST ";
-const REMOVE_ITEM = "REMOVE_ITEM";
-
-const reducer = (state, action) => {
-  if (action.type === CLEAR_LIST) {
-    return { ...state, people: [] };
-  }
-  if (action.type === REST_LIST) {
-    return { ...state, people: data };
-  }
-  if (action.type === REMOVE_ITEM) {
-    let newPeople = state.people.filter(
-      (person) => person.id !== action.payload.id
-    );
-
-    return state;
-  }
-  // return state;
-  throw new Error(`No matching "${action.type}" - action type`);
 };
 
 const ReducerBasics = () => {
