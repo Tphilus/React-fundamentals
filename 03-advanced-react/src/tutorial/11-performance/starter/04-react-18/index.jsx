@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState } from "react";
 const LatestReact = () => {
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const [items, setItems] = useState([]);
 
   const handleChange = (e) => {
@@ -18,10 +18,10 @@ const LatestReact = () => {
   };
   return (
     <section>
-      <form className='form'>
+      <form className="form">
         <input
-          type='text'
-          className='form-input'
+          type="text"
+          className="form-input"
           value={text}
           onChange={handleChange}
         />
@@ -30,9 +30,9 @@ const LatestReact = () => {
 
       <div
         style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
-          marginTop: '2rem',
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+          marginTop: "2rem",
         }}
       >
         {items}
