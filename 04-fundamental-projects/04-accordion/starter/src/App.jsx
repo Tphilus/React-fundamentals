@@ -1,4 +1,20 @@
+import { useState } from "react";
+import data from "./data";
+import SingleQuestion from "./Question";
+
 const App = () => {
-  return <h2>Accordion Starter</h2>;
+  const [questions, setQuestions] = useState(data);
+  return (
+    <main>
+      <div className="container">
+        <h3> question and answer about login </h3>
+        <section className="info">
+          {questions?.map((question) => {
+            return <SingleQuestion key={question.id} {...question} />;
+          })}
+        </section>
+      </div>
+    </main>
+  );
 };
 export default App;
