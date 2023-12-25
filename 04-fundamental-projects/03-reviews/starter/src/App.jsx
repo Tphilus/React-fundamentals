@@ -1,4 +1,14 @@
+import Review from "./Review";
+
 const App = () => {
-  return <h2>Reviews Starter</h2>;
+  return (
+    <main className="container">
+      <div className="title">
+        <h2> our review </h2>
+        <div className="title-underline"></div>
+      </div>
+      <Review />
+    </main>
+  );
 };
 export default App;
