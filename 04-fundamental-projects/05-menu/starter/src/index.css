@@ -269,8 +269,9 @@ ul {
   width: 90vw;
   margin: 0 auto;
   max-width: var(--max-width);
-  display: grid;
+  display: flex;
   gap: 2rem;
+  flex-direction: column;
 }
 
 .menu-item {
@@ -278,7 +279,7 @@ ul {
   border-radius: var(--borderRadius);
 }
 .menu-item .img {
-  height: 15rem;
+  height: 1rem;
   border-top-right-radius: var(--borderRadius);
   border-top-left-radius: var(--borderRadius);
 }
