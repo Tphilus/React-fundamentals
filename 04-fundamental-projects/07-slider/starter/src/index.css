@@ -245,6 +245,13 @@ ul {
   text-align: center;
 }
 
+.title span {
+  font-size: 0.85em;
+  color: orangered;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
 .title-underline {
   background: var(--primary-500);
   width: 7rem;
@@ -319,6 +326,18 @@ ul {
   cursor: pointer;
   transition: var(--transition);
 }
+
+.section-center {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 80vw;
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  display: flex;
+}
+
 .prev:hover,
 .next:hover {
   background: var(--primary-500);
@@ -340,6 +359,16 @@ ul {
     font-size: 1.5rem;
   }
 }
+
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+}
+
 .next-slide {
   transform: translateX(100%);
 }
@@ -362,4 +391,17 @@ ul {
 }
 .slick-next::before {
   color: var(--primary-500) !important;
+}
+
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+article.lastSlide {
+  transform: translateX(-100%);
+}
+
+article.nextSlide {
+  transform: translateX(100%);
 }
