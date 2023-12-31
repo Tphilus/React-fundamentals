@@ -293,3 +293,13 @@ ul {
   line-height: 2;
   margin-bottom: 2rem;
 }
+
+
+.lorem-forms .btn {
+  align-self: stretch;
+}
+
+.lorem-texts p {
+  line-height: 2;
+  margin-bottom: 2rem;
+}
