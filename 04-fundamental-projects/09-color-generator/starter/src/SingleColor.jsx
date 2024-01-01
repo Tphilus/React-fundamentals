@@ -1,0 +1,35 @@
+import React, { useEffect, useState } from "react";
+import rgbToHex from "./utils";
+
+export default function SingleColor({ rgb, weight, index }) {
+  // console.log(hexColor);
+  const [alert, setAlert] = useState(false);
+  const bcg = rgb.join(",");
+  const hex = rgbToHex(...rgb);
+  const hexValue = `#${hexColor}`;
+  console.log(hex);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setAlert(false);
+    }, 3000);
+    return () => clearTimeout(timeout);
+  }, [alert]);
+
+  return (
+    <article
+      className={`color ${index > 10 && "color-light"} `}
+      style={{ backgroundColor: `rgb(${bcg})` }}
+      onClick={() => {
+        setAlert(true);
+        navigator.clipboard.writeText(hexValue);
+      }}
+    >
+      <p className="percent-value">{weight}%</p>
+      <p className="color-value"> {hexValue} </p>
+      {/* <p className="color-value"> {} </p> */}
+
+      {alert && <p className="alert"> copied to clipboard </p>}
+    </article>
+  );
+}
