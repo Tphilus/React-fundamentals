@@ -16,6 +16,7 @@ const App = () => {
     }
     setText(data.slice(0, amount));
   };
+  // ggggg
 
   return (
     <section className="section-center">
