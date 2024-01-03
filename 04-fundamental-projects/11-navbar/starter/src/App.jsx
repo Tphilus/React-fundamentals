@@ -1,4 +1,12 @@
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+
 const App = () => {
-  return <h2>Navbar Starter</h2>;
+  return (
+    <>
+      <Navbar />
+      <Sidebar />
+    </>
+  );
 };
 export default App;
