@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaBars, FaTwitter } from "react-icons/fa";
 import { links, social } from "./data";
 import logo from "./logo.svg";
 
 export default function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
+  const linksContainerRef = useRef(null);
+   const linksRef = useRef(null);
+
+   useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if(showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`
+    } else {
+      linksContainerRef.current.style.height = "0px";
+    }
+    console.log(linksHeight);
+   }, [showLinks])
   return (
     <nav>
       <div className="nav-header">
@@ -13,7 +25,21 @@ export default function Navbar() {
           <FaBars />
         </button>
       </div>
-      { showLinks && <div className="links-container show-container">
+
+      <div className="links-container show-container" ref={linksContainerRef}>
+        <ul className="links" ref={linksRef} >
+          {links?.map((link) => {
+            const { id, url, text } = link;
+            return (
+              <li key={id}>
+                <a href={url}>{text}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      {/* { showLinks && <div className="links-container show-container">
         <ul className="links">
           {links?.map((link) => {
             const { id, url, text } = link;
@@ -24,7 +50,7 @@ export default function Navbar() {
             );
           })}
         </ul>
-      </div>}
+      </div>} */}
 
       {/* <div className={`${ showLinks ? "links-container show-container" : "links-container"}`} >
         <ul className="links">
