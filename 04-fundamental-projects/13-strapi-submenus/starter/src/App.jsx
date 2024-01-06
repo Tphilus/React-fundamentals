@@ -1,4 +1,14 @@
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+import Submenu from "./Submenu";
+
 const App = () => {
-  return <h2>Strapi Starter</h2>;
+  return <>
+    <Navbar />
+    <Sidebar />
+    <Hero />
+    <Submenu />
+  </>;
 };
 export default App;
