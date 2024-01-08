@@ -11,7 +11,7 @@ export default function Hero() {
         <article className="hero-ingo">
           <h1>
             Payments infrastructure <br />
-            for the internet
+            for the internet  
           </h1>
           <p>
             Millions of companies of all sizes—from startups to Fortune 500s—use

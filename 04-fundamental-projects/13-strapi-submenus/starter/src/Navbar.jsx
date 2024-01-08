@@ -12,8 +12,13 @@ export default function Navbar() {
    const bottom = tempBtn.bottom - 3;
     openSubmenu(page, {center, bottom})
   }
+
+  const handleSubmit = (e) => {
+    
+  }
+
   return (
-    <nav className="nav">
+    <nav className="nav" onMouseOver={handleSubmit} >
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt="strip" className="nav-logo" />
