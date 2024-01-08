@@ -6,7 +6,7 @@ export default function Hero() {
   const { closeSubmenu } = useGlobalContext();
   // console.log(data);
   return (
-    <section className="hero">
+    <section className="hero" onMouseOver={closeSubmenu}>
       <div className="hero-center">
         <article className="hero-ingo">
           <h1>
