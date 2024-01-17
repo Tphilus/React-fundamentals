@@ -30,6 +30,7 @@ const Nav = () => {
             );
           })}
         </ul>
+        <CartButtons className="cart-btn-wrapper" />
       </div>
     </NavContainer>
   );
