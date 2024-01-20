@@ -18,7 +18,9 @@ const AboutPage = () => {
             Lorem As an LLM, I am trained to understand and respond only to a
             subset of languages at this time and can't provide assistance with
             that. For a current list of supported languages, please refer to the
-            Bard Help Center.
+            Bard Help Center. Generate Lorem Ipsum placeholder text for use in
+            your graphic, print and web layouts, and discover plugins for your
+            favorite writing,
           </p>
         </article>
       </Wrapper>
