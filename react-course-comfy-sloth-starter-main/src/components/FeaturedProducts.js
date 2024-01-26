@@ -32,10 +32,10 @@ const FeaturedProducts = () => {
           const { id } = product;
           return <Product key={id} {...product} />;
         })} */}
-        {featured?.map((product) => {
+        {/* {featured?.map((product) => {
           const { id } = product;
           return <Product key={id} {...product} />;
-        })}
+        })} */}
       </div>
     </Wrapper>
   );
