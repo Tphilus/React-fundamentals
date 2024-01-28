@@ -28,7 +28,7 @@ const SingleProductPage = () => {
   }, [id]);
   console.log(product);
   console.log(useParams());
-  return <Wrapper></Wrapper>;
+  return <Wrapper> </Wrapper>;
 };
 
 const Wrapper = styled.main`
