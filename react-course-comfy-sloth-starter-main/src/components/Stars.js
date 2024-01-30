@@ -1,9 +1,26 @@
-import React from 'react'
-import styled from 'styled-components'
-import { BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'
-const Stars = () => {
-  return <h4>stars</h4>
-}
+import React from "react";
+import styled from "styled-components";
+import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
+const Stars = ({ stars, reviews }) => {
+  return (
+    <Wrapper>
+      <div className="stars">
+        {/* star  */}
+        <span>
+          {stars >= 1 ? (
+            <BsStarFill />
+          ) : stars >= 0.5 ? (
+            <BsStarHalf />
+          ) : (
+            <BsStar />
+          )}
+        </span>
+        {/* end of start  */}
+      </div>
+      <div className="reviews">({reviews} customer reviews )</div>
+    </Wrapper>
+  );
+};
 
 const Wrapper = styled.div`
   display: flex;
@@ -18,5 +35,5 @@ const Wrapper = styled.div`
     margin-bottom: 0;
   }
   margin-bottom: 0.5rem;
-`
-export default Stars
+`;
+export default Stars;
