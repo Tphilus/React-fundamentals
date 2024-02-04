@@ -25,7 +25,7 @@ export const FilterProvider = ({ children }) => {
 
   useEffect(() => {
     dispatch({ type: LOAD_PRODUCTS, payload: products });
-  });
+  }, [products]);
 
   return (
     <FilterContext.Provider

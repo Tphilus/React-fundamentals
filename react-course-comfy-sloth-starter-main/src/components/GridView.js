@@ -13,7 +13,6 @@ const GridView = ({ products }) => {
     </Wrapper>
   );
 };
-
 const Wrapper = styled.section`
   img {
     height: 175px;
