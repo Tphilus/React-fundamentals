@@ -14,7 +14,7 @@ const ListView = ({ products }) => {
               <h4>{name}</h4>
               <h5 className="price"> {formatPrice(price)} </h5>
               <p> {description.substring(0, 150)}... </p>
-              <Link to={`/prodects/${id}`} className="btn">
+              <Link to={`/products/${id}`} className="btn">
                 Details
               </Link>
             </div>

@@ -19,7 +19,7 @@ const ProductList = () => {
   if (grid_view === false) {
     return <ListView products={products} />;
   }
-  return <GridView products={products}>Product List</GridView>;
+  return <GridView products={products} />;
 };
 
 export default ProductList;
