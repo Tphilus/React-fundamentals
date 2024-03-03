@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useReducer } from "react";
+import React, { useEffect, useContext, useReducer, createContext } from "react";
 import reducer from "../reducers/cart_reducer";
 import {
   ADD_TO_CART,
@@ -7,6 +7,7 @@ import {
   CLEAR_CART,
   COUNT_CART_TOTALS,
 } from "../actions";
+import { type } from "@testing-library/user-event/dist/type";
 
 const initialState = {
   cart: [],
@@ -15,12 +16,28 @@ const initialState = {
   shipping_fee: 534,
 };
 
-const CartContext = React.createContext();
+const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  // add to cart
+  const addToCart = (id, color, amount, product) => {
+    dispatch({ type: ADD_TO_CART, payload: { id, color, amount, product } });
+  };
+
+  // remove amount
+  const remove = (id) => {};
+
+  // toggle amount
+  const toggleAmount = (id, value) => {};
+
+  // clear cart
+  const clearCart = () => {};
   return (
-    <CartContext.Provider value={{ state }}>{children}</CartContext.Provider>
+    <CartContext.Provider value={{ ...state, addToCart }}>
+      {children}
+    </CartContext.Provider>
   );
 };
 // make sure use
