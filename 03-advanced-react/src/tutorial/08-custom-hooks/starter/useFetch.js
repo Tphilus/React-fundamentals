@@ -28,6 +28,25 @@ const useFetch = (url) => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const fetchData2 = async () => {
+      try {
+        if (!resp.ok) {
+          setIsError(true);
+          setIsLoading(false);
+          return;
+        }
+
+        const response = await resp.json();
+        setData(response);
+      } catch (error) {
+        setIsError(error);
+      }
+      setIsLoading(false);
+    };
+    fetchData2();
+  }, []);
+
   return { isLoading, isError, data };
 };
 

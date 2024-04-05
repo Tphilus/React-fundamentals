@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-const url = 'https://api.github.com/users';
+import { useState, useEffect } from "react";
+const url = "https://api.github.com/users";
 
 const FetchData = () => {
   const [users, setUsers] = useState([]);
@@ -19,7 +19,7 @@ const FetchData = () => {
   return (
     <section>
       <h3>github users</h3>
-      <ul className='users'>
+      <ul className="users">
         {users.map((user) => {
           const { id, login, avatar_url, html_url } = user;
           return (
