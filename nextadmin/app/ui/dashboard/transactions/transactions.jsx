@@ -18,7 +18,7 @@ const Transactions = () => {
         <tbody>
           <tr>
             <td>
-              <div className={styles.user} >
+              <span className={styles.user} >
                 <Image
                   src="/noavatar.png"
                   alt=""
@@ -27,7 +27,7 @@ const Transactions = () => {
                   className={styles.userImage}
                 />
                 John Doe
-              </div>
+              </span>
             </td>
             <td>
               <span className={`${styles.status} ${styles.pending}`}>

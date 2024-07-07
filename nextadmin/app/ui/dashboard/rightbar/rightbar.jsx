@@ -8,9 +8,9 @@ const Rightbar = () => {
     <main className={styles.container}>
       <div className={styles.item}>
         <div className={styles.bgcontainer}>
-          <Image src="/astronaut.png" alt="" fill />
+          <Image src="/astronaut.png" alt="" fill  className={styles.bg}/>
         </div>
-        <div className={styles.texts}>
+        <div className={styles.text}>
           <span className={styles.notification}>🔥Available Now</span>
           <h3 className={styles.title} > How to use the new version of the admin dashboard </h3>
           <span className={styles.subTitle}>Takes 4 minutes to learn</span>
@@ -25,10 +25,10 @@ const Rightbar = () => {
         </div>
       </div>
       <div className={styles.item}>
-        <div className={styles.bgcontainer}>
-          <Image src="/astronaut.png" alt="" fill />
-        </div>
-        <div className={styles.texts}>
+        {/* <div className={styles.bgcontainer}>
+          <Image src="/astronaut.png" alt="" fill  className={styles.bg}/>
+        </div> */}
+        <div className={styles.text}>
           <span className={styles.notification}>🔥Available Now</span>
           <h3 className={styles.title} > How to use the new version of the admin dashboard </h3>
           <span className={styles.subTitle}>Takes 4 minutes to learn</span>
@@ -37,8 +37,8 @@ const Rightbar = () => {
             aperiam quam repudiandae molestias recusandae.
           </p>
           <button className={styles.button} >
-            <MdReadMore />
-            Learn
+            <MdPlayCircleFilled />
+            Watch
           </button>
         </div>
       </div>
