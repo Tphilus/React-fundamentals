@@ -11,6 +11,7 @@
     border-radius: 10px;
     font-weight: bold;
     color: var(--textSoft);
+    height: max-content;
 }
 
 .imgContainer {
@@ -44,4 +45,15 @@
 
 .form label {
     font-size: 12px;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: teal;
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }

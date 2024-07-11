@@ -18,7 +18,7 @@ const SingleUserPage = () => {
                 <label htmlFor="">Email</label>
                 <input type="email" name='email' placeholder='Email' />
                 <label htmlFor="">Password</label>
-                <input type="password" name='' placeholder='Enter your passwor' />
+                <input type="password" name='' placeholder='***********' />
                 <label htmlFor="">Password</label>
                 <input type="password" name='password' placeholder='Enter your password' />
                 <label htmlFor="">Phone</label>
@@ -35,7 +35,7 @@ const SingleUserPage = () => {
                     <option value={true}>Yes</option>
                     <option value={false}>No</option>
                 </select>
-                <button type='submit' > Submit </button>
+                <button type='submit' > Update </button>
             </form>
         </div>
     </div>
